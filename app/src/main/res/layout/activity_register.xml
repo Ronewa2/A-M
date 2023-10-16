@@ -54,7 +54,7 @@
             tools:layout_editor_absoluteY="1dp">
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/login_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
@@ -67,7 +67,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/login_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="184dp"
@@ -93,7 +93,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/resetPassword_button"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"
@@ -104,7 +104,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+                app:layout_constraintTop_toBottomOf="@+id/new_forgotPassword" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -118,7 +118,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/signup_button"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
@@ -137,10 +137,10 @@
                 android:text="Don't have an account?"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+                app:layout_constraintTop_toBottomOf="@+id/resetPassword_button" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/new_forgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="248dp"
@@ -148,8 +148,8 @@
                 android:ems="10"
                 android:inputType="text"
                 android:text="Confirm Password"
-                app:layout_constraintBottom_toTopOf="@+id/button"
-                app:layout_constraintStart_toStartOf="@+id/editTextText2"
+                app:layout_constraintBottom_toTopOf="@+id/resetPassword_button"
+                app:layout_constraintStart_toStartOf="@+id/login_password"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
